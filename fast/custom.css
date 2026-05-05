@@ -1,0 +1,16 @@
+/*  Recommended poi configuration.
+    - Display > Themes: Enable Use SVG Icon
+    - Display > Themes: Disable Smooth Transition
+*/
+
+/* disable blur */
+poi-main div.poi-app-container {
+    backdrop-filter: unset;
+}
+
+/* disable animations */
+poi-main * {
+    transition: unset !important;
+    transition-duration: unset !important;
+    transition-delay: unset !important;
+}
