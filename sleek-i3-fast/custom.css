@@ -1,0 +1,39 @@
+/*  poi configuration, needed to be done manually.
+    - Display > Layout: Option No.5,No.2
+    - Display > Themes: Enable Use SVG Icon
+    - Display > Themes: Disable Smooth Transition
+    - Display > Zoom: 100%
+    - Display > Game resolution: Enable Use fixed resolution for game area
+    - Display > Game resolution: 67% 
+*/
+
+/* move panel button to the top-left and add opacity */
+poi-main a.overlay-panel-trigger {
+    opacity: 30%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 0;
+    bottom: unset;
+}
+
+/* increase opacity of panel button when hover */
+poi-main a.overlay-panel-trigger:hover {
+    opacity: 100%;
+}
+
+/*  disable minimize and maximize window buttons (linux specific - i3) */
+title-bar button.window-minimize, title-bar button.window-maximize {
+    display: none !important;
+}
+
+/* disable blur */
+poi-main div.poi-app-container {
+    backdrop-filter: unset;
+}
+
+/* disable animations */
+poi-main * {
+    transition: unset !important;
+    transition-duration: unset !important;
+    transition-delay: unset !important;
+}
+
